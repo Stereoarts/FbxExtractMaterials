@@ -1,3 +1,7 @@
+// Copyright (c) 2017 Nora
+// Released under the MIT license
+// http://opensource.org/licenses/mit-license.php
+
 using UnityEditor;
 using UnityEngine;
 using System.IO;
@@ -41,7 +45,7 @@ class FbxExtractMaterials : AssetPostprocessor
             return null;
         }
 
-		var assetImporter = AssetImporter.GetAtPath( assetPath );
+        var assetImporter = AssetImporter.GetAtPath( assetPath );
         if( assetImporter == null ) {
             return null;
         }
